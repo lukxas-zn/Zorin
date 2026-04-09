@@ -1,0 +1,104 @@
+/* ESTILOS GENERALES Y OSCUROS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #10101a; /* Un azul muy oscuro */
+    color: white;
+    overflow: hidden; /* Evita el scroll manual */
+}
+
+/* CLASES DE UTILIDAD */
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1); /* Animación de deslizamiento */
+}
+
+.central {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.oculto {
+    transform: translateY(100%); /* Las secciones ocultas están abajo */
+}
+
+/* ESTILOS DE LA PORTADA Y BOTÓN */
+#portada {
+    z-index: 10;
+}
+
+#btn-inicio {
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: #3b82f6; /* Azul Zorin */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#btn-inicio:hover {
+    background-color: #2563eb;
+    transform: scale(1.1);
+}
+
+/* ESTILOS DE LA SECCIÓN LOGO */
+#seccion-logo h1 {
+    font-size: 64px;
+    margin-top: 20px;
+}
+
+.logo-animado {
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    animation: aparecer 2s forwards 1s; /* Aparece después de 1s */
+}
+
+@keyframes aparecer {
+    to { opacity: 1; }
+}
+
+/* ESTILOS ORIGEN Y DESCARGA */
+.contenido-origen {
+    display: flex;
+    gap: 50px;
+    max-width: 80%;
+    align-items: center;
+}
+
+.img-origen, .img-esquema {
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.contenedor-flexible {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.texto-descarga ol {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+                          
