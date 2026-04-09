@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Zorin OS - Presentación</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background-color: #0f172a; color: white; overflow-x: hidden; }
+        
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        h1 { font-size: 4rem; margin-bottom: 1rem; color: #3b82f6; }
+        p { font-size: 1.5rem; max-width: 800px; line-height: 1.6; }
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .img-box {
+            width: 300px;
+            height: 200px;
+            background: #1e293b;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+        }
+        
+        /* Animación suave */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+    <section id="inicio">
+        <h1>¿Qué es Zorin OS?</h1>
+        <p>Haz clic abajo para descubrir el sistema diseñado para ser el puente perfecto.</p>
+        <a href="#origen" class="btn">Empezar Presentación</a>
+    </section>
+
+    <section id="origen">
+        <h1>Hecho en Dublín</h1>
+        <p>Fue creado en <b>Irlanda</b> por los hermanos <b>Artyom y Kyrill Zorin</b>.</p>
+        <p>Su meta era clara: crear una versión de Linux que fuera tan fácil de usar que cualquier usuario de Windows se sintiera como en casa.</p>
+        <a href="#herencia" class="btn">Ver su base</a>
+    </section>
+
+    <section id="herencia">
+        <h1>Basado en Gigantes</h1>
+        <p>Zorin OS se construye sobre <b>Ubuntu 22.04 LTS</b>, heredando su estabilidad y seguridad.</p>
+        <img src="esquema-zorin.png" alt="Esquema Zorin" style="max-width: 80%; border-radius: 10px; margin-top: 20px;">
+        <a href="#descarga" class="btn">¿Cómo se descarga?</a>
+    </section>
+
+    <section id="descarga">
+        <h1>Proceso de Descarga</h1>
+        <div style="text-align: left; background: #1e293b; padding: 30px; border-radius: 20px;">
+            <p>1. Entra a <b>zorin.com</b></p>
+            <p>2. Elige <b>Zorin OS Core</b> (Gratis) o <b>Lite</b>.</p>
+            <p>3. Descarga el archivo ISO y grábalo en un USB con <b>Rufus</b>.</p>
+        </div>
+        <p style="margin-top: 20px;">¡Listo para instalar!</p>
+    </section>
+
+</body>
+                                                            </html>
+                                                            
